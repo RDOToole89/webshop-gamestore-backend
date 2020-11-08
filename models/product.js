@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
         through: "orderDetails",
         foreignKey: "productId",
       });
+      product.hasMany(models.productComment);
     }
   }
   product.init(

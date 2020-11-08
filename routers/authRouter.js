@@ -24,6 +24,7 @@ router.post("/", async (req, res, next) => {
         userId: foundUser.id,
         name: foundUser.firstName,
         email: foundUser.email,
+        isAdmin: foundUser.isAdmin,
       });
       // console.log("TOKEN", token);
 
